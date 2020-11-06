@@ -12,7 +12,7 @@ const ButtonType: Record<string, string> = {
     isCoin: ""
 }
 
-function Button({ text, type = "default"}: IButton) {
+export function Button({ text, type = "default"}: IButton) {
 	return (
 		<button
 
@@ -24,4 +24,3 @@ function Button({ text, type = "default"}: IButton) {
 	);
 }
 
-export default Button;
