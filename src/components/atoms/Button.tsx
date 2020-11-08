@@ -16,7 +16,7 @@ export function Button({ text, type = "default"}: IButton) {
 	return (
 		<button
 
-			className={`m-4 flex items-center justify-between font-semibold  py-2 px-4 border ${ButtonType[`${type}`]}`}
+			className={`m-4 flex items-center justify-between font-semibold  py-2 px-4 border focus:outline-none ${ButtonType[`${type}`]}`}
 		>
 			{text}
 			{type === "isQuiz" && <HiArrowCircleRight className="ml-2 text-3xl" />}

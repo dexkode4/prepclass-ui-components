@@ -19207,6 +19207,31 @@ video {
 .prepclass-primary-textcolor{
   color: #5F9048;
 }
+.prepclass-background {
+  background-color: #5f9048;
+}
+
+.prepclass-color {
+  color: #5f9048;
+}
+
+.prepclass-border {
+  border: 1px solid #5f9048;
+}
+
+.prepclass-gray {
+  background-color: #f6f6f6;
+}
+
+.prepclass-background-light {
+  background-color: #27af60;
+}
+
+.prepclass-grid {
+  background-color: #e5e5e5;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
 
 @media (min-width: 640px) {
   .sm\:container {
