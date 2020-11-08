@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { RiMoreLine } from "react-icons/ri";
-import {Button} from './Button';
+import {Button} from '../atoms/Button';
 
 
 interface ICardLiveClass {
@@ -39,15 +39,16 @@ function CardLiveClass({
 
 				<div className="flex items-center justify-between">
 					<div className="flex mt-2">
-						{profileImages?.map(src => (
+						{profileImages?.filter((_, index) => index < 3).map(src => (
 							<img
 								src={src}
 								alt={"user"}
 								className="w-10 h-10 -mr-4 border-4 border-white rounded-full"
 							/>
 						))}
+
 					</div>
-					<RiMoreLine className="cursor-pointer" />
+					<RiMoreLine className="text-xl cursor-pointer" />
 				</div>
 
 				<BackgroundBar title={`${progress}` as string} />
