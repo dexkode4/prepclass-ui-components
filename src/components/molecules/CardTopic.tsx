@@ -25,7 +25,7 @@ function CardTopic({ url, topic, duration }: ICardTopic) {
 					<MdMoreVert className="text-xl cursor-pointer" />
 				</div>
 			</div>
-            <div className="flex items-center justify-between w-64 p-2 bg-white border-t-2 rounded-b-3xl">
+            <div className="flex items-center justify-between w-64 p-2 pl-6 bg-white border-t-2 rounded-b-3xl">
                 <AiOutlineClockCircle className="text-xl text-gray-600"/>
                 <span>{duration}</span>
                 <Button text="Start" type="isClass"/>

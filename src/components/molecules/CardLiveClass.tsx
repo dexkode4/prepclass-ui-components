@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { RiMoreLine } from "react-icons/ri";
+import { BsDot } from 'react-icons/bs';
 import {Button} from '../atoms/Button';
+import { BackgroundBar } from './Elements';
+
 
 
 interface ICardLiveClass {
@@ -33,7 +36,7 @@ function CardLiveClass({
 				<h2 className="text-sm font-bold">
 					{description}
 					<span className="px-4 py-1 ml-2 text-xs text-white uppercase bg-red-500 rounded-lg time-left">
-						* live in {timeLeft}MINS
+						<BsDot className="inline text-lg text-white"/> live in {timeLeft}MINS
 					</span>
 				</h2>
 
@@ -62,28 +65,6 @@ function CardLiveClass({
 		</Container>
 	);
 }
-
-export const BackgroundBar = styled.div`
-	background-color: #EBF0E9;
-	border-radius: 100px;
-	height: 0.2rem;
-	margin-top: 1.5rem;
-	display: flex;
-	align-items: center;
-	position: relative;
-
-	&::before {
-		content: "";
-		width: ${({ title }) => title}%;
-		height: 0.12rem;
-		background-color: #5f9048;
-		border-radius: 100px;
-		margin-left: 0.2rem;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-`;
 
 const Container = styled.div`
 	padding: 1.25rem;

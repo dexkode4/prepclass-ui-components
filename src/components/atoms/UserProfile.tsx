@@ -10,7 +10,7 @@ function UserProfile({username}: IUserProfile) {
     const [isOpen, setIsOpen] = useState(false);
 	return (
 		
-		<div>
+		<div className="relative">
 			<button onClick={() => setIsOpen((open) => !open)} className="flex items-center justify-between px-2 py-1 overflow-hidden bg-white border-2 border-gray-600 focus:outline-none focus:border-white rounded-xl">
 				<img
 					className="w-8 h-8 mr-2 border-2 border-gray-400 rounded-full"
@@ -23,7 +23,7 @@ function UserProfile({username}: IUserProfile) {
             {
                 isOpen  &&
                 
-			<div className="w-48 py-2 mt-2 bg-white rounded-lg shadow-xl">
+			<div className="absolute w-48 py-2 mt-2 bg-white rounded-lg shadow-xl top-4">
 				<Link
 					to="/settings"
 					className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
