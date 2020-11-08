@@ -19226,6 +19226,11 @@ video {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+.prepclass-xflow {
+  margin-left: -14rem;
+  padding-left: 14rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
