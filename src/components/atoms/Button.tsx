@@ -6,7 +6,7 @@ interface IButton {
     type: string
 }
 const ButtonType: Record<string, string> = {
-    isQuiz : " bg-white hover:bg-blue-900 text-blue-900 hover:text-white hover:border-blue-900 rounded-full text-sm px-2",
+    isQuiz : " bg-white hover:bg-blue-900 text-blue-900 hover:text-white hover:border-blue-900 rounded-full text-sm px-3 py-1",
     isClass: " m-4 btn-class-bgcolor hover:bg-green-100 prepclass-primary-textcolor hover:text-green-500 hover:border-green-500 rounded-xl py-2 px-4",
     default: " bg-green-600 hover:bg-white text-white hover:text-green-500 hover:border-green-500 rounded-xl py-2 px-4",
     isCoin: ""

@@ -6,6 +6,7 @@ import UserProfile from "./components/atoms/UserProfile";
 import CardTopic from "./components/molecules/CardTopic";
 import CardClassGroup from "./components/molecules/CardClassgroup";
 import CardQuiz from './components/molecules/CardQuiz';
+import NotificationBell from './components/atoms/NotificationBell';
 
 // import {Button} from './components/atoms/Button';
 // import Search from './components/atoms/Search';
@@ -62,6 +63,7 @@ function App() {
 			/>
 
       <CardQuiz imageUrl={"/images/Group4.png"} subject={"Trigonometry"} topic={"Chapter 1: Algebra Numbers"}/>
+      <NotificationBell count={2}/>
 		</div>
 	);
 }
