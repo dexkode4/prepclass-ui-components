@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { MdMoreVert } from "react-icons/md";
 import { AiOutlineClockCircle } from "react-icons/ai";
-import {Button} from '../atoms/Button';
+import Button from '../atoms/Button';
 
 
 interface Iimage {

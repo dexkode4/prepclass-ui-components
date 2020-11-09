@@ -12,11 +12,11 @@ const ButtonType: Record<string, string> = {
     isCoin: ""
 }
 
-export function Button({ text, type = "default"}: IButton) {
+function Button({ text, type = "default"}: IButton) {
 	return (
 		<button
 
-			className={`flex items-center justify-between font-semibold border focus:outline-none ${ButtonType[`${type}`]}`}
+			className={`flex items-center justify-between font-semibold focus:outline-none ${ButtonType[`${type}`]}`}
 		>
 			{text}
 			{type === "isQuiz" && <HiArrowCircleRight className="ml-2 text-3xl" />}
@@ -24,3 +24,4 @@ export function Button({ text, type = "default"}: IButton) {
 	);
 }
 
+export default Button;

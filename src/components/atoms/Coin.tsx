@@ -7,7 +7,7 @@ interface Icoin {
 
 const CoinStyle = styled.div`
 	width: 7.2rem;
-	height: 2.7rem;
+	height: 3rem;
 	background: linear-gradient(293.07deg, #f2a636 26.91%, #f7c250 66.47%),
 		#f6b746;
 	border: 1px solid rgba(173, 81, 8, 0.3);
@@ -43,7 +43,7 @@ const CoinStyle = styled.div`
 
 export default function Coin({count}: Icoin) {
     return (
-        <CoinStyle>
+        <CoinStyle id="coin">
             <div className="penny"/>
             <span>{count}</span>
             coins

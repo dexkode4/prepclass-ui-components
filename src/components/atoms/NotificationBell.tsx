@@ -8,8 +8,8 @@ interface IBell {
 
 function NotificationBell({count}: IBell) {
     return (
-        <Container count={count}>
-            <IoMdNotificationsOutline className="text-4xl"/>
+        <Container count={count} id="alert">
+            <IoMdNotificationsOutline className="text-3xl"/>
         </Container>
     )
 }
@@ -17,7 +17,7 @@ function NotificationBell({count}: IBell) {
 
 const Container = styled.div`
     background: #fff;
-    padding: .8rem 1rem;
+    padding: .6rem 1rem;
     border-radius: 1rem;
     box-sizing: border-box;
     display: flex;
@@ -29,8 +29,8 @@ const Container = styled.div`
 
     &::before{
         content: "${(props: IBell) => props.count}";
-        height: 1rem;
-        width: 1rem;
+        height: 1.3rem;
+        width: 1.3rem;
         background: #FF5749;
         border: 3px solid #fff;
         position: absolute;

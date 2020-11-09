@@ -11,7 +11,7 @@ function UserProfile({username}: IUserProfile) {
 	return (
 		
 		<div className="relative">
-			<button onClick={() => setIsOpen((open) => !open)} className="flex items-center justify-between px-2 py-1 overflow-hidden bg-white border-2 border-gray-600 focus:outline-none focus:border-white rounded-xl">
+			<button onClick={() => setIsOpen((open) => !open)} className="flex items-center justify-between px-2 py-2 overflow-hidden bg-white border-2 focus:outline-none focus:border-white rounded-xl">
 				<img
 					className="w-8 h-8 mr-2 border-2 border-gray-400 rounded-full"
 					src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"

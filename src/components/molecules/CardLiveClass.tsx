@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { RiMoreLine } from "react-icons/ri";
 import { BsDot } from 'react-icons/bs';
-import {Button} from '../atoms/Button';
+import Button from '../atoms/Button';
 import { BackgroundBar } from './Elements';
 
 

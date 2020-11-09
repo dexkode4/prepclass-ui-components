@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BackgroundBar } from "./Elements";
-import {Button} from '../atoms/Button';
+import Button from '../atoms/Button';
 
 interface Iimage {
 	url: string;
