@@ -7,14 +7,12 @@ import CardTopic from "./components/molecules/CardTopic";
 import CardClassGroup from "./components/molecules/CardClassgroup";
 import CardQuiz from "./components/molecules/CardQuiz";
 import NotificationBell from "./components/atoms/NotificationBell";
-
-// import {Button} from './components/atoms/Button';
+import ClassPage from './components/organisms/ClassPage';
+import DropdownButton from './components/atoms/DropdownButton';
+import FilterButton from './components/atoms/FilterButton';
 import Search from "./components/atoms/Search";
 import Header from "./components/molecules/Header";
 import Timer from './components/molecules/Timer';
-// import ClassSideBar from './components/molecules/ClassSideBar';
-// import CardWithText from './components/atoms/CardWithText';
-// import ClassPage from './components/organisms/ClassPage';
 import "./App.css";
 
 let profileImages = [
@@ -29,7 +27,19 @@ let profileImages = [
 	"https://tailwindcss.com/_next/static/media/erin-lindford.4804b52007ca82ebe9999d19c717b44d.jpg",
 ];
 
+
+const levels = ['Nur', 'Pry 1', 'Pry 2', 'Pry 3', 'SSS 1', 'JSS 2'];
+const name = "Class:";
 function App() {
+  return (
+    <>
+      <ClassPage />
+      <DropdownButton levels={levels} name={name}/>
+      <Button text="Join Live" type="isQuiz" />
+      <FilterButton />
+   </>
+  );
+
 	return (
 		<>
 			<Header />
@@ -46,11 +56,7 @@ function App() {
 					progress={70}
 				/>
 				<UserProfile username={"Akinloye Seun"} />
-				{/* <Button text="Join Live" type="isQuiz" /> */}
 				<Search placeholder="Search Menu...." width="quaterSize" />
-				{/* <ClassSideBar /> */}
-				{/* <CardWithText url="/assets/img/Chemistry.svg" text="Chemistry"/> */}
-				{/* <ClassPage /> */}
 
 				<CardTopic
 					url={"/images/Rectangle.png"}

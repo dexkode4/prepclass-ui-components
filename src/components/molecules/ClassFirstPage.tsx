@@ -10,9 +10,9 @@ interface IClassFirstPage {
 }
 function ClassFirstPage({left_side, header, desc, text, type}: IClassFirstPage) {
     return (
-        <div className="flex items-center w-3/5 h-40 bg-gray-200">
-            <div><img className="h-auto" src={left_side} alt="art on class" /></div>
-            <div className="flex items-center bg-white prepclass-xflow">
+        <div className="flex items-center w-3/5 h-40 bg-gray-100">
+            <div className="z-10 h-full"><img className="z-10 h-full" src={left_side} alt="art on class" /></div>
+            <div className="z-0 flex items-center bg-white prepclass-xflow">
                 <div className="w-4/5 py-2 ml-4">
                     <p className="mb-2 mr-4 text-lg font-bold prepclass-color">{header}</p>
                     <p className="text-base text-gray-500">{desc}</p>
