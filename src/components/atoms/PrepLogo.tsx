@@ -17,13 +17,14 @@ const PrepClassStyled = styled.div`
   margin-bottom: 10%;
 
   .prepclass {
-  border:2px solid green;
-  padding:9px 12px;
-  border-radius:10px;
+  border: .25rem solid #497E2F;
+  padding:10px 12px;
+  border-radius:1rem;
   position: relative;
   font-weight: 800;
-  color: green;
-  font-size: 1.4rem
+  color: #497E2F;
+  font-size: 1.1rem;
+  background-color: #fff;
 }
 
 .prepclass::before {

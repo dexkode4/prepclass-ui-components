@@ -4,6 +4,13 @@
 
 @tailwind utilities;
 
+
+.btn-class-bgcolor{
+    background-color: #EBF0E9;
+}
+.prepclass-primary-textcolor{
+    color: #5F9048;
+}
 .prepclass-background {
     background-color: #5f9048;
 }
